@@ -15,20 +15,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-:root{
-  --verde:#098690;
-  --blanco:#fff;
-  --Azul:#071762;
-  --oscuro:#000;
-  --titulos: 'Poppins', sans-serif;
-  --parrafos: 'Poppins', sans-serif;
-}
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   font-family: 'Poppins', sans-serif;
 }
 
@@ -36,15 +27,158 @@ html{
   box-sizing: border-box;
   font-size: 62.5%;
 }
-body{
-  font-size: 1.6rem;
-  overflow-x: hidden;
+:root {
+  --verde: #098690;
+  --blanco: #fff;
+  --Azul: #071762;
+  --oscuro: #000;
+  --titulos: 'Poppins', sans-serif;
+  --parrafos: 'Poppins', sans-serif;
+  --background: #ffffff; /* Color de fondo claro */
+  --text-color: #000000;  /* Color de texto oscuro */
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --nav-link: var(--Azul);
+  --nav-active-bg: var(--Azul);
+  --nav-active-text: var(--blanco);
+}
+
+/* Modo claro por defecto */
+body {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto oscuro */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+}
+
+/* Estilos adicionales para header, enlaces, etc. */
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navegacion a {
+  color: #071762; /* Azul oscuro */
+}
+
+body.dark-mode .navegacion a {
+  color: #ffffff; /* Color blanco en el modo oscuro */
+}
+
+.navegacion a.active {
+  background: #071762; /* Fondo azul */
+  color: white;
+}
+
+body.dark-mode .navegacion a.active {
+  background: #ffffff;
+  color: black;
+}
+
+body.dark-mode .icons {
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  display: block; /* Asegúrate de que no esté en display: none */
+}
+
+body.dark-mode .services-opt h2 {
+  font-size: 2rem;
+  margin: 16px 7px;
+  font-weight: bold;
+  margin-left:4%;
+  color: var(--oscuro);
+}
+
+body.dark-mode .services-opt p{
+  font-size: 1.9rem;
+  margin: 16px 7px;
+  margin-left:4%;
+  margin-right: 3%;
+  color: var(--oscuro);
+}
+
+body.dark-mode .services-opt h3 {
+  font-size: 1.7rem;
+  margin: 16px 7px;
+  font-weight: bold;
+  margin-left:4%;
+  color: var(--oscuro);
+}
+
+body.dark-mode .detail ul {
+  margin: 16px 20px;
+  padding-left: 20px;
+  margin-left:4%;
+  margin-right: 3%;
+  color: var(--oscuro);
+}
+
+body.dark-mode .testimony-card h3{
+  color: var(--oscuro);
+}
+
+body.dark-mode .testimony-card p{
+  font-size: 1.5rem;
+  color: var(--oscuro);
+}
+
+body.dark-mode .input-formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--oscuro);
 }
 
 *,*::after, *::before{
   box-sizing: inherit;
 }
 
+/* Ocultar botón hamburguesa en pantallas grandes */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Estilos responsivos header */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navegacion {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--blanco);
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .navegacion.show {
+    display: flex; /* Se muestra solo cuando se activa con JS */
+  }
+
+  body.dark-mode .navegacion {
+    background: #333;
+  }
+}
 /* globales */
 
 .contenedor{
@@ -152,9 +286,6 @@ img{
   background-color: var(--Azul);
 }
 
-section{
-  margin-top:5%;
-}
 
 ul li{
   font-family: var(--parrafos);
@@ -168,12 +299,12 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background: rgba(248, 249, 250, 1);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1); /* Color blanco con 10% de opacidad */
+  backdrop-filter: blur(10px);
 }
 
 /* Logo y navegación alineados */
@@ -185,12 +316,13 @@ header {
 }
 
 .navegacion a {
-  color: var(--oscuro);
+  color: var(--Azul);
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   transition: background 0.2s;
   border-radius: 5px;
+
 }
 
 .navegacion a.active,
@@ -204,26 +336,20 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  color: var(--Azul);
 }
 
 .icon-btn {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
-/* Modo oscuro */
-body.dark-mode header {
-  background: rgba(52, 58, 64, 0.8);
-}
-
-body.dark-mode .navegacion a {
-  color: var(--blanco);
-}
-
 header a img {
-  height: 70px;
+  margin-top: 3px;
+  height: 95px;
   width: auto;
   object-fit: contain;
+  display: block !important;
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -304,7 +430,7 @@ header a img {
 }
 
 .content .title{
-  font-size: 100px;
+  font-size: 75px;
   text-transform: uppercase;
   color: var(--Azul);
   font-weight: bold;
@@ -314,7 +440,7 @@ header a img {
 }
 
 .content .name{
-  font-size: 100px;
+  font-size: 75px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
@@ -329,7 +455,7 @@ header a img {
   margin-bottom: 20px;
   font-size: 18px;
   margin-left: 5px;
-
+font-weight: bold;
   opacity: 0;
   animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
@@ -340,26 +466,37 @@ header a img {
   animation: animate 1s ease-in-out 1.2s 1 forwards;
 }
 
-.content .btn button{
+.content .btn a{
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border: 2px solid var(--blanco);
+  text-decoration: none;
 }
 
-.content .btn button:nth-child(1){
+.content .btn a:nth-child(1){
   margin-right: 15px;
+  background: transparent;
+  color: var(--verde);
+  border: 2px solid var(--blanco);
+  transition: 0.3s;
 }
 
-.content .btn button:nth-child(2){
+.content .btn a:nth-child(2){
   background: transparent;
   color: var(--Azul);
   border: 2px solid var(--blanco);
   transition: 0.3s;
 }
 
-.content .btn button:nth-child(2):hover{
+.content .btn a:nth-child(2):hover{
+  background-color: var(--Azul);
+  color: var(--blanco);
+  border-color: var(--Azul);
+}
+
+.content .btn a:nth-child(1):hover{
   background-color: var(--Azul);
   color: var(--blanco);
   border-color: var(--Azul);
@@ -427,7 +564,7 @@ header a img {
   background-color: var(--Azul);
   left: 0;
   top: 0;
-  animation: runningTime 35s linear 1 forwards;
+  animation: runningTime 10s linear 1 forwards;
 }
 
 @keyframes runningTime {
@@ -644,17 +781,18 @@ header a img {
 .texto-services{
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 4%;
 }
 
 .services-container {
   display: block;
-  gap: 20px;
+  gap: 15px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .services-opt {
-  width: 70%;
+  width: 80%;
   max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -664,7 +802,13 @@ header a img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
   margin-top: 3%;
-  margin-left: 15%;
+  margin-left: 10%;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.services-opt p, .services-opt h3, .detail ul {
+  overflow-y: auto;
 }
 
 .services-opt:hover {
@@ -718,6 +862,7 @@ header a img {
   cursor: pointer;
   font-size: 1.7rem;
   margin-left:4%;
+  text-decoration: none;
 
 }
 
@@ -762,7 +907,7 @@ header a img {
 /* SECTION PROJECTS */
 
 .section-projects{
-  margin-top: -2%;
+  margin-top: 3%;
 }
 
 .texto-projects {
@@ -778,7 +923,7 @@ header a img {
   margin-left: 5%;
 }
 .btn-projects button {
-  flex: 0 0 calc(50% - 1rem);
+  flex: 0 0 calc(40% - 1rem);
   padding: 1rem 2rem;
   font-size: 1.5rem;
 }
@@ -786,7 +931,7 @@ header a img {
 .btn-projects .btn{
   text-decoration: none;
   color: var(--blanco);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
   padding: 1rem 5rem;
   border-radius: 5px;
@@ -808,6 +953,8 @@ header a img {
 
   .btn-projects button {
     flex: unset;
+    font-size: 2.5rem;
+    padding: -6rem 4rem;
   }
 }
 
@@ -820,6 +967,13 @@ header a img {
 }
 
 .projects {
+  flex: 0 0 calc(50% - 1rem);
+  border: 1px solid #e1e1e1;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.project {
   flex: 0 0 calc(50% - 1rem);
   border: 1px solid #e1e1e1;
   padding: 2rem;
@@ -840,7 +994,7 @@ header a img {
   justify-content: space-between;
 }
 
-.service-name button {
+.service-name a {
   padding: 1rem;
   border-radius: 5px;
   border: none;
@@ -849,6 +1003,7 @@ header a img {
   height: 3.5rem;
   font-size: 1.5rem;
   margin-left: 1%;
+  text-decoration: none;
 }
 
 .service-name button:hover {
@@ -1043,7 +1198,7 @@ header a img {
 }
 
 .testimony-card p{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .stars {
@@ -1059,6 +1214,40 @@ header a img {
 
 /* CONTACT */
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: var(--Azul);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.5rem;
+}
+
+.pagination button:hover {
+  background-color: var(--verde);
+}
+
+.pagination button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  color: var(--blanco);
+  font-size: 1.5rem;
+}
+
+.pagination span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
 /* CONTACT FORM */
 .formulario-contacto {
@@ -1165,7 +1354,7 @@ header a img {
 .pie-pagina {
   margin-top: 5rem;
   background-color: rgb(20, 20, 20);
-  padding: 5rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -1174,7 +1363,17 @@ header a img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 33%;
   }
+
+  .logo-footer {
+    margin-left: 15%;
+  }
+
+}
+
+.logo-footer {
+  margin-left: 15%;
 }
 
 .contenedor-piepagina .logo-footer {
@@ -1216,6 +1415,11 @@ header a img {
   font-size: 2rem;
 }
 
+.footer a{
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: bold;
+}
 /* END FOOTER */
 
 /* Botones flotantes */

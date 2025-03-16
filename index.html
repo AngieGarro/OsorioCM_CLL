@@ -12,268 +12,270 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-
-
 </head>
-<body>
+<body class="dark-mode">
 
 <header>
-  <a href="#home"><img src="img/generalImg/icon.png" alt="Logo"></a>
-  <nav class="navegacion">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#testimonies">Testimonies</a>
-    <a href="#contact">Contact</a>
+  <a href="#home"><img id="logo" src="img/generalImg/Logo_ColorPalette.png" alt="Logo"></a>
+
+  <!-- Botón de menú hamburguesa -->
+  <button id="menu-toggle" class="menu-toggle">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <nav class="navegacion" id="nav-menu">
+    <a href="#home" class="active" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#about" data-en="About Us" data-es="Sobre Nosotros">About Us</a>
+    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+    <a href="#testimonies" data-en="Testimonies" data-es="Testimonios">Testimonies</a>
+    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </nav>
 
   <div class="icons">
-    <i id="language-toggle" class="bi bi-translate icon-btn"></i>
+    <i id="language-toggle" class="bi bi-translate icon-btn"> ES</i>
     <i id="theme-toggle" class="bi bi-moon icon-btn"></i>
   </div>
 </header>
 
 <section id="home">
-<div class="carousel">
-  <div class="list">
+  <div class="carousel">
+    <div class="list">
 
-    <div class="item" style="background-image: url(img/HomeImg/Image13.png);">
-      <div class="content">
-        <div class="title">PRESSURE</div>
-        <div class="name">WASHING</div>
-        <div class="des">Why Choose Us?
-          Your property will look cleaner and refreshed. We adjust the pressure according to the
-          surface to prevent damage. We care for your property and the environment. Ideal for
-          residential, commercial, and industrial properties.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image13.png);">
+        <div class="content">
+          <div class="title" data-es="LAVADO" data-en="PRESSURE">PRESSURE</div>
+          <div class="name" data-es="PRESIÓN" data-en="WASHING">WASHING</div>
+          <div class="des" data-es="¿Por qué elegirnos? Su propiedad se verá más limpia y renovada. Ajustamos la presión según la superficie para evitar daños. Cuidamos su propiedad y el medio ambiente. Ideal para propiedades residenciales, comerciales e industriales." data-en="Why Choose Us? Your property will look cleaner and refreshed. We adjust the pressure according to the surface to prevent damage. We care for your property and the environment. Ideal for residential, commercial, and industrial properties.">
+            Why Choose Us? Your property will look cleaner and refreshed. We adjust the pressure according to the surface to prevent damage. We care for your property and the environment. Ideal for residential, commercial, and industrial properties.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image12.png);">
-      <div class="content">
-        <div class="title">PRESSURE</div>
-        <div class="name">WASHING</div>
-        <div class="des">Restore the look of your property with our Pressure Washing service!
-          Contact us today for a quote.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image12.png);">
+        <div class="content">
+          <div class="title" data-es="LAVADO" data-en="PRESSURE">PRESSURE</div>
+          <div class="name" data-es="PRESIÓN" data-en="WASHING">WASHING</div>
+          <div class="des" data-es="¡Restaure el aspecto de su propiedad con nuestro servicio de Lavado a Presión! Contáctenos hoy para obtener un presupuesto." data-en="Restore the look of your property with our Pressure Washing service! Contact us today for a quote.">
+            Restore the look of your property with our Pressure Washing service! Contact us today for a quote.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image1.png);">
-      <div class="content">
-        <div class="title">RESIDENTIAL CLEANING</div>
-        <div class="name">SERVICE</div>
-        <div class="des">We have trusted professionals to take care of your home. Quality products
-          that guarantee a deep cleaning without damaging your surfaces. One-time, weekly,
-          biweekly or monthly cleaning according to your needs.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image1.png);">
+        <div class="content">
+          <div class="title" data-es="LIMPIEZA RESIDENCIAL" data-en="RESIDENTIAL CLEANING">RESIDENTIAL CLEANING</div>
+          <div class="name" data-es="SERVICIO" data-en="SERVICE">SERVICE</div>
+          <div class="des" data-es="Contamos con profesionales de confianza para cuidar su hogar. Productos de calidad que garantizan una limpieza profunda sin dañar sus superficies. Limpieza de una sola vez, semanal, quincenal o mensual según sus necesidades." data-en="We have trusted professionals to take care of your home. Quality products that guarantee a deep cleaning without damaging your surfaces. One-time, weekly, biweekly or monthly cleaning according to your needs.">
+            We have trusted professionals to take care of your home. Quality products that guarantee a deep cleaning without damaging your surfaces. One-time, weekly, biweekly or monthly cleaning according to your needs.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image11.png);">
-      <div class="content">
-        <div class="title">JANITORAL</div>
-        <div class="name">SERVICES</div>
-        <div class="des">Let Osorio Cleaning & Maintenance LLC take care of the cleaning while you focus on your business!
-          Contact us today for a personalized quote.</div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image11.png);">
+        <div class="content">
+          <div class="title" data-es="SERVICIOS" data-en="JANITORIAL">JANITORAL</div>
+          <div class="name" data-es="DE LIMPIEZA" data-en="SERVICES">SERVICES</div>
+          <div class="des" data-es="¡Deje que Osorio Cleaning & Maintenance LLC se encargue de la limpieza mientras usted se enfoca en su negocio! Contáctenos hoy para un presupuesto personalizado." data-en="Let Osorio Cleaning & Maintenance LLC take care of the cleaning while you focus on your business! Contact us today for a personalized quote.">
+            Let Osorio Cleaning & Maintenance LLC take care of the cleaning while you focus on your business! Contact us today for a personalized quote.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image4.png);">
-      <div class="content">
-        <div class="title">JANITORAL</div>
-        <div class="name">SERVICES</div>
-        <div class="des">We offer services for offices, commercial buildings, stores, condominiums,
-          schools, churches, gyms, and more. We use high-quality products and equipment.</div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image4.png);">
+        <div class="content">
+          <div class="title" data-es="SERVICIOS" data-en="JANITORIAL">JANITORAL</div>
+          <div class="name" data-es="DE LIMPIEZA" data-en="SERVICES">SERVICES</div>
+          <div class="des" data-es="Ofrecemos servicios para oficinas, edificios comerciales, tiendas, condominios, escuelas, iglesias, gimnasios y más. Utilizamos productos y equipos de alta calidad." data-en="We offer services for offices, commercial buildings, stores, condominiums, schools, churches, gyms, and more. We use high-quality products and equipment.">
+            We offer services for offices, commercial buildings, stores, condominiums, schools, churches, gyms, and more. We use high-quality products and equipment.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image5.png);">
-      <div class="content">
-        <div class="title">POST-CONSTRUCTION</div>
-        <div class="name">CLEANING</div>
-        <div class="des">We remove even the smallest traces of dust and dirt. We use high-quality
-          tools and products for efficient cleaning. We guarantee a safe and professional job.
-          We adapt to your schedule to deliver the space on time.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image5.png);">
+        <div class="content">
+          <div class="title" data-es="LIMPIEZA" data-en="POST-CONSTRUCTION">POST-CONSTRUCTION</div>
+          <div class="name" data-es="Post-construcción" data-en="CLEANING">CLEANING</div>
+          <div class="des" data-es="Eliminamos incluso los rastros más pequeños de polvo y suciedad. Utilizamos herramientas y productos de alta calidad para una limpieza eficiente. Garantizamos un trabajo seguro y profesional. Nos adaptamos a su horario para entregar el espacio a tiempo." data-en="We remove even the smallest traces of dust and dirt. We use high-quality tools and products for efficient cleaning. We guarantee a safe and professional job. We adapt to your schedule to deliver the space on time.">
+            We remove even the smallest traces of dust and dirt. We use high-quality tools and products for efficient cleaning. We guarantee a safe and professional job. We adapt to your schedule to deliver the space on time.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image6.png);">
-      <div class="content">
-        <div class="title">POST-CONSTRUCTION</div>
-        <div class="name">CLEANING</div>
-        <div class="des">Service for all types of projects. Whether it's a newly built house, a commercial
-          building, or an office renovation, we ensure that the place is spotless, safe, and ready for use.
-          Leave the post-construction cleaning in our hands! Contact us today for a personalized quote.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image6.png);">
+        <div class="content">
+          <div class="title" data-es="LIMPIEZA" data-en="POST-CONSTRUCTION">POST-CONSTRUCTION</div>
+          <div class="name" data-es="Post-construcción" data-en="CLEANING">CLEANING</div>
+          <div class="des" data-es="Servicio para todo tipo de proyectos. Ya sea una casa recién construida, un edificio comercial o una renovación de oficina, nos aseguramos de que el lugar esté impecable, seguro y listo para usar. ¡Deje la limpieza post-construcción en nuestras manos! Contáctenos hoy para un presupuesto personalizado." data-en="Service for all types of projects. Whether it's a newly built house, a commercial building, or an office renovation, we ensure that the place is spotless, safe, and ready for use. Leave the post-construction cleaning in our hands! Contact us today for a personalized quote.">
+            Service for all types of projects. Whether it's a newly built house, a commercial building, or an office renovation, we ensure that the place is spotless, safe, and ready for use. Leave the post-construction cleaning in our hands! Contact us today for a personalized quote.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image7.png);">
-      <div class="content">
-        <div class="title">HANDYMAN</div>
-        <div class="name">SERVICES</div>
-        <div class="des">We provide practical solutions for the maintenance of your property. Service for homes, offices, condominiums and businesses.</div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image7.png);">
+        <div class="content">
+          <div class="title" data-es="SERVICIOS" data-en="HANDYMAN">HANDYMAN</div>
+          <div class="name" data-es="DE REPARACIONES" data-en="SERVICES">SERVICES</div>
+          <div class="des" data-es="Ofrecemos soluciones prácticas para el mantenimiento de su propiedad. Servicio para hogares, oficinas, condominios y negocios." data-en="We provide practical solutions for the maintenance of your property. Service for homes, offices, condominiums and businesses.">
+            We provide practical solutions for the maintenance of your property. Service for homes, offices, condominiums and businesses.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image8.png);">
-      <div class="content">
-        <div class="title">RESIDENTIAL CLEANING</div>
-        <div class="name">SERVICE</div>
-        <div class="des">We adapt to the specific requirements of your home. Enjoy a clean and fresh
-          home effortlessly! Contact us today for a personalized quote.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image8.png);">
+        <div class="content">
+          <div class="title" data-es="LIMPIEZA RESIDENCIAL" data-en="RESIDENTIAL CLEANING">RESIDENTIAL CLEANING</div>
+          <div class="name" data-es="SERVICIOS" data-en="SERVICE">SERVICE</div>
+          <div class="des" data-es="Nos adaptamos a los requerimientos específicos de su hogar. ¡Disfrute de un hogar limpio y fresco sin esfuerzo! Contáctenos hoy para un presupuesto personalizado." data-en="We adapt to the specific requirements of your home. Enjoy a clean and fresh home effortlessly! Contact us today for a personalized quote.">
+            We adapt to the specific requirements of your home. Enjoy a clean and fresh home effortlessly! Contact us today for a personalized quote.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image9.png);">
-      <div class="content">
-        <div class="title">HANDYMAN</div>
-        <div class="name">SERVICES</div>
-        <div class="des">Let us take care of those pending arrangements! Contact us today for a quick, no-obligation quote.</div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image9.png);">
+        <div class="content">
+          <div class="title" data-es="SERVICIOS" data-en="HANDYMAN">HANDYMAN</div>
+          <div class="name" data-es="DE REPARACIONES" data-en="SERVICES">SERVICES</div>
+          <div class="des" data-es="¡Déjenos encargarnos de esos arreglos pendientes! Contáctenos hoy para un presupuesto rápido y sin compromiso." data-en="Let us take care of those pending arrangements! Contact us today for a quick, no-obligation quote.">
+            Let us take care of those pending arrangements! Contact us today for a quick, no-obligation quote.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image10.png);">
-      <div class="content">
-        <div class="title">HANDYMAN</div>
-        <div class="name">SERVICES</div>
-        <div class="des">We have quality equipment and trained personnel, get a quote for your repair!</div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image10.png);">
+        <div class="content">
+          <div class="title" data-es="SERVICIOS" data-en="HANDYMAN">HANDYMAN</div>
+          <div class="name" data-es="DE REPARACIONES" data-en="SERVICES">SERVICES</div>
+          <div class="des" data-es="Contamos con equipos de calidad y personal capacitado, ¡obtenga un presupuesto para su reparación!" data-en="We have quality equipment and trained personnel, get a quote for your repair!">
+            We have quality equipment and trained personnel, get a quote for your repair!
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="item" style="background-image: url(img/HomeImg/Image3.png);">
-      <div class="content">
-        <div class="title">COMMERCIAL</div>
-        <div class="name">CLEANING</div>
-        <div class="des">WHY CHOOSE US? We have a highly trained and reliable team. We guarantee efficient and safe
-          cleaning. We offer daytime, nighttime, weekly, or customized services according to your
-          needs. We adapt to your budget and requirements. We ensure a spotless environment for your
-          business.
-        </div>
-        <div class="btn">
-          <button>See More</button>
-          <button>Contact Us!</button>
+      <div class="item" style="background-image: url(img/HomeImg/Image3.png);">
+        <div class="content">
+          <div class="title" data-es="LIMPIEZA" data-en="COMMERCIAL">COMMERCIAL</div>
+          <div class="name" data-es="COMERCIAL" data-en="CLEANING">CLEANING</div>
+          <div class="des" data-es="¿POR QUÉ ELEGIRNOS? Contamos con un equipo altamente capacitado y confiable. Garantizamos una limpieza eficiente y segura. Ofrecemos servicios diurnos, nocturnos, semanales o personalizados según sus necesidades. Nos adaptamos a su presupuesto y requerimientos. Aseguramos un ambiente impecable para su negocio." data-en="WHY CHOOSE US? We have a highly trained and reliable team. We guarantee efficient and safe cleaning. We offer daytime, nighttime, weekly, or customized services according to your needs. We adapt to your budget and requirements. We ensure a spotless environment for your business.">
+            WHY CHOOSE US? We have a highly trained and reliable team. We guarantee efficient and safe cleaning. We offer daytime, nighttime, weekly, or customized services according to your needs. We adapt to your budget and requirements. We ensure a spotless environment for your business.
+          </div>
+          <div class="btn">
+            <a href="#services" data-es="Ver Más" data-en="See More">See More</a>
+            <a href="#contact" data-es="¡Contáctenos!" data-en="Contact Us!">Contact Us!</a>
+          </div>
         </div>
       </div>
+
     </div>
+
+    <!--next prev button-->
+    <div class="arrows">
+      <button class="prev"><</button>
+      <button class="next">></button>
+    </div>
+
+    <!-- time running -->
+    <div class="timeRunning"></div>
 
   </div>
-
-  <!--next prev button-->
-  <div class="arrows">
-    <button class="prev"><</button>
-    <button class="next">></button>
-  </div>
-
-  <!-- time running -->
-  <div class="timeRunning"></div>
-
-</div>
 </section>
 
 <section id="about">
   <div class="contenedor-nosotros contenedor">
     <div class="texto-nosotros">
-      <p class="bienvenida">Welcome to!</p>
-      <h1>Osorio Cleaning & Maintenance LLC</h1>
+      <p class="bienvenida" data-es="¡Bienvenido a!" data-en="Welcome to!"></p>
+      <h1 data-es="Osorio Cleaning & Maintenance LLC" data-en="Osorio Cleaning & Maintenance LLC"></h1>
       <div class="about contenedor">
 
       </div>
-      <h2>About Us!</h2>
-      <p>Osorio Cleaning & Maintenance is a company dedicated to cleaning and maintenance services for residential and commercial spaces. It was founded with the commitment to provide efficient, high-quality solutions, prioritizing customer satisfaction and the use of eco-friendly products.
-        Over the years, the company has grown and diversified its services, adapting to market needs while ensuring safe, healthy, and well-maintained environments. Its highly trained professional team works to the highest standards of cleanliness, providing reliable and personalized service.
-        With a vision of leadership in the industry, Osorio Cleaning & Maintenance continues to innovate its processes and expand its presence to offer comprehensive solutions that exceed customer expectations.
-      </p>
+      <h2 data-es="¡Sobre Nosotros!" data-en="About Us!"></h2>
+      <p data-es="Osorio Cleaning & Maintenance es una empresa dedicada a los servicios de limpieza y mantenimiento para espacios residenciales y comerciales. Fue fundada con el compromiso de ofrecer soluciones eficientes de alta calidad, priorizando la satisfacción del cliente y el uso de productos ecológicos. A lo largo de los años, la empresa ha crecido y diversificado sus servicios, adaptándose a las necesidades del mercado mientras garantiza ambientes seguros, saludables y bien mantenidos. Su equipo profesional altamente capacitado trabaja bajo los más altos estándares de limpieza, brindando un servicio confiable y personalizado. Con una visión de liderazgo en la industria, Osorio Cleaning & Maintenance continúa innovando sus procesos y expandiendo su presencia para ofrecer soluciones integrales que superen las expectativas de los clientes." data-en="Osorio Cleaning & Maintenance is a company dedicated to cleaning and maintenance services for residential and commercial spaces. It was founded with the commitment to provide efficient, high-quality solutions, prioritizing customer satisfaction and the use of eco-friendly products. Over the years, the company has grown and diversified its services, adapting to market needs while ensuring safe, healthy, and well-maintained environments. Its highly trained professional team works to the highest standards of cleanliness, providing reliable and personalized service. With a vision of leadership in the industry, Osorio Cleaning & Maintenance continues to innovate its processes and expand its presence to offer comprehensive solutions that exceed customer expectations."></p>
     </div>
     <div class="imagenes-nosotros">
       <div class="imagen1">
-       <img src="img/AboutImg/about3.png" alt="mission"/>
+        <img src="img/AboutImg/about3.png" alt="mission" data-es="misión" data-en="mission"/>
       </div>
       <div class="imagenes2">
-        <img src="img/AboutImg/about1.png" alt="mission"/>
-        <img src="img/AboutImg/about2.png" alt="mission"/>
+        <img src="img/AboutImg/about1.png" alt="mission" data-es="misión" data-en="mission"/>
+        <img src="img/AboutImg/about2.png" alt="mission" data-es="misión" data-en="mission"/>
       </div>
     </div>
   </div>
 
   <section class="about-section">
-    <h2 class="about-title">Our mission, our vision and our objectives</h2>
-    <p class="about-subtitle">We guarantee high quality services for you.</p>
+    <h2 class="about-title" data-es="Nuestra misión, nuestra visión y nuestros objetivos" data-en="Our mission, our vision and our objectives"></h2>
+    <p class="about-subtitle" data-es="Garantizamos servicios de alta calidad para usted." data-en="We guarantee high-quality services for you."></p>
 
     <div class="cards-container">
       <div class="card">
-        <img src="img/AboutImg/mission.png" alt="Mission">
+        <img src="img/AboutImg/mission.png" alt="Mission" data-es="Misión" data-en="Mission">
         <div class="card-content">
-          <h3>Mission</h3>
-          <p>Provide high-quality cleaning and maintenance services for homes and businesses, ensuring clean, healthy, and safe spaces. We are committed to offering efficient and personalized solutions that exceed our clients' expectations, with a highly trained professional team and eco-friendly cleaning products.</p>
+          <h3 data-es="Misión" data-en="Mission"></h3>
+          <p data-es="Brindar servicios de limpieza y mantenimiento de alta calidad para hogares y negocios, asegurando espacios limpios, saludables y seguros. Estamos comprometidos a ofrecer soluciones eficientes y personalizadas que superen las expectativas de nuestros clientes, con un equipo profesional altamente capacitado y productos de limpieza ecológicos." data-en="Provide high-quality cleaning and maintenance services for homes and businesses, ensuring clean, healthy, and safe spaces. We are committed to offering efficient and personalized solutions that exceed our clients' expectations, with a highly trained professional team and eco-friendly cleaning products."></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/AboutImg/vision.png" alt="Vision">
+        <img src="img/AboutImg/vision.png" alt="Vision" data-es="Visión" data-en="Vision">
         <div class="card-content">
-          <h3>Vision</h3>
-          <p>To be the leading company in cleaning and maintenance services, recognized for excellence, commitment to sustainability, and customer satisfaction. We strive to continuously innovate our processes and expand our services to meet the changing needs of the market.</p>
+          <h3 data-es="Visión" data-en="Vision"></h3>
+          <p data-es="Ser la empresa líder en servicios de limpieza y mantenimiento, reconocida por su excelencia, compromiso con la sostenibilidad y satisfacción del cliente. Nos esforzamos por innovar continuamente nuestros procesos y expandir nuestros servicios para satisfacer las necesidades cambiantes del mercado." data-en="To be the leading company in cleaning and maintenance services, recognized for excellence, commitment to sustainability, and customer satisfaction. We strive to continuously innovate our processes and expand our services to meet the changing needs of the market."></p>
         </div>
       </div>
 
       <div class="card">
-        <img src="img/AboutImg/objectives.png" alt="Objectives">
+        <img src="img/AboutImg/objectives.png" alt="Objectives" data-es="Objetivos" data-en="Objectives">
         <div class="card-content">
-          <h3>Objectives</h3>
+          <h3 data-es="Objetivos" data-en="Objectives"></h3>
           <ul>
-            <li>Ensure customer satisfaction through high-quality services.</li>
-            <li>Offer personalized solutions for homes and businesses.</li>
-            <li>Continuously train our team for efficiency and professionalism.</li>
-            <li>Expand market presence through partnerships and improved processes.</li>
+            <li data-es="Asegurar la satisfacción del cliente mediante servicios de alta calidad." data-en="Ensure customer satisfaction through high-quality services."></li>
+            <li data-es="Ofrecer soluciones personalizadas para hogares y negocios." data-en="Offer personalized solutions for homes and businesses."></li>
+            <li data-es="Capacitar continuamente a nuestro equipo para la eficiencia y el profesionalismo." data-en="Continuously train our team for efficiency and professionalism."></li>
+            <li data-es="Expandir la presencia en el mercado mediante asociaciones y procesos mejorados." data-en="Expand market presence through partnerships and improved processes."></li>
           </ul>
         </div>
       </div>
@@ -282,7 +284,7 @@
 </section>
 
 <section id="services" class="services">
-  <h2 class="texto-services">Services</h2>
+  <h2 class="texto-services" data-es="Servicios" data-en="Services">Services</h2>
 <div class="services-container">
   <!-- Carrusel -->
   <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -290,25 +292,45 @@
       <!-- Service Card 1 -->
       <div class="carousel-item active">
         <div class="services-opt" data-platillo="commercial-cleaning">
-          <img src="img/generalImg/services1.png" alt="Janitoral Services">
-          <h2>Janitoral Services</h2>
-          <p>We offer a high-quality janitorial cleaning service to keep your facilities spotless,
-            hygienic, and presentable every day. We understand that a clean environment not only
-            enhances your company's image but also contributes to the well-being and productivity
-            of employees, customers, and visitors.</p>
+          <img src="img/generalImg/services1.png" alt="Janitorial Services">
+          <h2 data-es="Servicios de limpieza" data-en="Janitorial Services">Janitorial Services</h2>
+          <p data-es="Ofrecemos un servicio de limpieza de alta calidad para mantener sus instalaciones impecables,
+      higiénicas y presentables todos los días. Entendemos que un ambiente limpio no solo mejora la imagen
+      de su empresa, sino que también contribuye al bienestar y la productividad de empleados, clientes y visitantes."
+             data-en="We offer a high-quality janitorial cleaning service to keep your facilities spotless,
+      hygienic, and presentable every day. We understand that a clean environment not only
+      enhances your company's image but also contributes to the well-being and productivity
+      of employees, customers, and visitors.">
+          </p>
           <div class="detail">
-            <h3>What does our janitorial cleaning service include?</h3>
+            <h3 data-es="¿Qué incluye nuestro servicio de limpieza?" data-en="What does our janitorial cleaning service include?">
+              What does our janitorial cleaning service include?
+            </h3>
             <ul>
-              <li> Cleaning and disinfection of common areas (receptions, hallways, meeting rooms, offices, etc.)</li>
-              <li>Restroom cleaning and supply replenishment (soap, toilet paper, hand towels)</li>
-              <li> Waste and recycling collection and management.</li>
-              <li>Deep floor cleaning (vacuuming, mopping, and waxing as needed)</li>
-              <li>Window and mirror cleaning.</li>
-              <li> Dusting and surface cleaning (desks, furniture, equipment, etc.)</li>
-              <li>Maintenance of kitchen or cafeteria areas.</li>
+              <li data-es="Limpieza y desinfección de áreas comunes (recepciones, pasillos, salas de reuniones, oficinas, etc.)."
+                  data-en="Cleaning and disinfection of common areas (receptions, hallways, meeting rooms, offices, etc.).">
+              </li>
+              <li data-es="Limpieza de baños y reposición de suministros (jabón, papel higiénico, toallas de manos)."
+                  data-en="Restroom cleaning and supply replenishment (soap, toilet paper, hand towels).">
+              </li>
+              <li data-es="Recolección y gestión de residuos y reciclaje."
+                  data-en="Waste and recycling collection and management.">
+              </li>
+              <li data-es="Limpieza profunda de suelos (aspirado, trapeado y encerado según sea necesario)."
+                  data-en="Deep floor cleaning (vacuuming, mopping, and waxing as needed).">
+              </li>
+              <li data-es="Limpieza de ventanas y espejos."
+                  data-en="Window and mirror cleaning.">
+              </li>
+              <li data-es="Eliminación de polvo y limpieza de superficies (escritorios, muebles, equipos, etc.)."
+                  data-en="Dusting and surface cleaning (desks, furniture, equipment, etc.).">
+              </li>
+              <li data-es="Mantenimiento de áreas de cocina o cafetería."
+                  data-en="Maintenance of kitchen or cafeteria areas.">
+              </li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-es="¡Contáctanos!" data-en="Contact Us!">Contact Us!</a>
         </div>
       </div>
 
@@ -316,26 +338,48 @@
       <div class="carousel-item">
         <div class="services-opt" data-platillo="commercial-cleaning">
           <img src="img/generalImg/service3.png" alt="Commercial Cleaning">
-          <h2>Commercial Cleaning</h2>
-          <p>At Osorio Cleaning & Maintenance LLC, we understand that keeping your commercial space
-            clean is key to projecting a professional image and ensuring a healthy environment for
-            employees and customers. Our Commercial Cleaning service is designed for businesses of
-            all sizes, providing tailored cleaning solutions to meet your needs
+          <h2 data-es="Limpieza comercial" data-en="Commercial Cleaning">Commercial Cleaning</h2>
+          <p data-es="En Osorio Cleaning & Maintenance LLC entendemos que mantener su espacio comercial limpio es clave
+      para proyectar una imagen profesional y garantizar un ambiente saludable para empleados y clientes.
+      Nuestro servicio de Limpieza Comercial está diseñado para negocios de todos los tamaños, ofreciendo
+      soluciones de limpieza adaptadas a sus necesidades."
+             data-en="At Osorio Cleaning & Maintenance LLC, we understand that keeping your commercial space
+      clean is key to projecting a professional image and ensuring a healthy environment for
+      employees and customers. Our Commercial Cleaning service is designed for businesses of
+      all sizes, providing tailored cleaning solutions to meet your needs.">
           </p>
           <div class="detail">
-            <h3>What does our Commercial Cleaning service include?</h3>
+            <h3 data-es="¿Qué incluye nuestro servicio de limpieza comercial?" data-en="What does our Commercial Cleaning service include?">
+              What does our Commercial Cleaning service include?
+            </h3>
             <ul>
-              <li>Deep cleaning and disinfection of offices, stores, restaurants, gyms, and more.</li>
-              <li>Maintenance of common areas and high-traffic spaces.</li>
-              <li>Cleaning and sanitization of restrooms and commercial kitchens.</li>
-              <li>Vacuuming, sweeping, mopping, and floor waxing.</li>
-              <li>Cleaning of windows, mirrors, and high-touch surfaces.</li>
-              <li>Waste and recycling management.</li>
-              <li>Restocking of hygiene supplies.</li>
-              <li> Specialized cleaning for carpets, furniture, and office equipment.</li>
+              <li data-es="Limpieza profunda y desinfección de oficinas, tiendas, restaurantes, gimnasios y más."
+                  data-en="Deep cleaning and disinfection of offices, stores, restaurants, gyms, and more.">
+              </li>
+              <li data-es="Mantenimiento de áreas comunes y espacios de alto tráfico."
+                  data-en="Maintenance of common areas and high-traffic spaces.">
+              </li>
+              <li data-es="Limpieza y desinfección de baños y cocinas comerciales."
+                  data-en="Cleaning and sanitization of restrooms and commercial kitchens.">
+              </li>
+              <li data-es="Aspirado, barrido, trapeado y encerado de pisos."
+                  data-en="Vacuuming, sweeping, mopping, and floor waxing.">
+              </li>
+              <li data-es="Limpieza de ventanas, espejos y superficies de alto contacto."
+                  data-en="Cleaning of windows, mirrors, and high-touch surfaces.">
+              </li>
+              <li data-es="Gestión de residuos y reciclaje."
+                  data-en="Waste and recycling management.">
+              </li>
+              <li data-es="Reposición de suministros de higiene."
+                  data-en="Restocking of hygiene supplies.">
+              </li>
+              <li data-es="Limpieza especializada para alfombras, muebles y equipos de oficina."
+                  data-en="Specialized cleaning for carpets, furniture, and office equipment.">
+              </li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-es="¡Contáctanos!" data-en="Contact Us!">Contact Us!</a>
         </div>
       </div>
 
@@ -343,25 +387,44 @@
       <div class="carousel-item">
         <div class="services-opt" data-platillo="commercial-cleaning">
           <img src="img/generalImg/services4.png" alt="Pressure Cleaning">
-          <h2>Pressure Cleaning</h2>
-          <p>At Osorio Cleaning & Maintenance LLC, we offer a high-quality Pressure Washing service
-            to remove dirt, mold, grease, and other residues that affect the appearance and maintenance
-            of your exterior surfaces. We use high-powered equipment and specialized techniques to
-            restore the look of your spaces, extend the lifespan of your surfaces, and enhance
-            your property's image
+          <h2 data-es="Limpieza a presión" data-en="Pressure Cleaning">Pressure Cleaning</h2>
+          <p data-es="En Osorio Cleaning & Maintenance LLC, ofrecemos un servicio de limpieza a presión de alta calidad
+      para eliminar suciedad, moho, grasa y otros residuos que afectan la apariencia y el mantenimiento
+      de sus superficies exteriores. Utilizamos equipos de alta potencia y técnicas especializadas para
+      restaurar la apariencia de sus espacios, prolongar la vida útil de sus superficies y mejorar la imagen
+      de su propiedad."
+             data-en="At Osorio Cleaning & Maintenance LLC, we offer a high-quality Pressure Washing service
+      to remove dirt, mold, grease, and other residues that affect the appearance and maintenance
+      of your exterior surfaces. We use high-powered equipment and specialized techniques to
+      restore the look of your spaces, extend the lifespan of your surfaces, and enhance
+      your property's image.">
           </p>
           <div class="detail">
-            <h3>What surfaces do we clean with Pressure Washing?</h3>
+            <h3 data-es="¿Qué superficies limpiamos con lavado a presión?" data-en="What surfaces do we clean with Pressure Washing?">
+              What surfaces do we clean with Pressure Washing?
+            </h3>
             <ul>
-              <li>Driveways and parking lots – We remove oil stains, grease, and accumulated dirt.</li>
-              <li>Facades and exterior walls – We eliminate mold, algae, and residues that affect your building’s appearance.</li>
-              <li>Sidewalks and walkways – We restore surfaces worn down by traffic and weather.</li>
-              <li>Terraces and patios – We remove dirt and stains to keep your space looking spotless.</li>
-              <li> Pool areas – We eliminate mold and hazardous residues for added safety.</li>
-              <li>Commercial and industrial surfaces – Deep cleaning of warehouses, storage facilities, and more.</li>
+              <li data-es="Entradas y estacionamientos – Eliminamos manchas de aceite, grasa y suciedad acumulada."
+                  data-en="Driveways and parking lots – We remove oil stains, grease, and accumulated dirt.">
+              </li>
+              <li data-es="Fachadas y paredes exteriores – Eliminamos moho, algas y residuos que afectan la apariencia de su edificio."
+                  data-en="Facades and exterior walls – We eliminate mold, algae, and residues that affect your building’s appearance.">
+              </li>
+              <li data-es="Aceras y pasillos – Restauramos superficies desgastadas por el tráfico y el clima."
+                  data-en="Sidewalks and walkways – We restore surfaces worn down by traffic and weather.">
+              </li>
+              <li data-es="Terrazas y patios – Eliminamos suciedad y manchas para mantener su espacio impecable."
+                  data-en="Terraces and patios – We remove dirt and stains to keep your space looking spotless.">
+              </li>
+              <li data-es="Áreas de piscina – Eliminamos moho y residuos peligrosos para mayor seguridad."
+                  data-en="Pool areas – We eliminate mold and hazardous residues for added safety.">
+              </li>
+              <li data-es="Superficies comerciales e industriales – Limpieza profunda de almacenes, depósitos y más."
+                  data-en="Commercial and industrial surfaces – Deep cleaning of warehouses, storage facilities, and more.">
+              </li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-es="¡Contáctanos!" data-en="Contact Us!">Contact Us!</a>
         </div>
       </div>
 
@@ -369,26 +432,47 @@
       <div class="carousel-item">
         <div class="services-opt" data-platillo="commercial-cleaning">
           <img src="img/generalImg/services2.png" alt="Post-Construction Cleaning">
-          <h2>Post-Construction Cleaning</h2>
-          <p>At Osorio Cleaning & Maintenance LLC, we offer a specialized Post-Construction Cleaning
-            service to leave your property spotless after a construction or remodeling project.
-            We understand that dust, debris, and construction residues can be a challenge,
-            which is why our highly trained team takes care of every detail to ensure your
-            space is move-in ready.
+          <h2 data-es="Limpieza post-construcción" data-en="Post-Construction Cleaning">Post-Construction Cleaning</h2>
+          <p data-es="En Osorio Cleaning & Maintenance LLC, ofrecemos un servicio especializado de limpieza post-construcción
+      para dejar su propiedad impecable después de un proyecto de construcción o remodelación.
+      Entendemos que el polvo, los escombros y los residuos de construcción pueden ser un desafío,
+      por lo que nuestro equipo altamente capacitado se encarga de cada detalle para garantizar que su
+      espacio esté listo para habitar."
+             data-en="At Osorio Cleaning & Maintenance LLC, we offer a specialized Post-Construction Cleaning
+      service to leave your property spotless after a construction or remodeling project.
+      We understand that dust, debris, and construction residues can be a challenge,
+      which is why our highly trained team takes care of every detail to ensure your
+      space is move-in ready.">
           </p>
           <div class="detail">
-            <h3>What does our Post-Construction Cleaning service include?</h3>
+            <h3 data-es="¿Qué incluye nuestro servicio de limpieza post-construcción?" data-en="What does our Post-Construction Cleaning service include?">
+              What does our Post-Construction Cleaning service include?
+            </h3>
             <ul>
-              <li>Removal of dust and construction residues from all surfaces.</li>
-              <li>Deep floor cleaning (vacuuming, sweeping, mopping, and waxing as needed)</li>
-              <li>Window and frame cleaning to remove paint stains and dust.</li>
-              <li>Cleaning and disinfection of restrooms and kitchens.</li>
-              <li>Cleaning of cabinets, shelves, and new appliances.</li>
-              <li>Removal of adhesives, paint stains, and leftover materials.</li>
-              <li>Debris and post-construction waste collection and disposal.</li>
+              <li data-es="Eliminación de polvo y residuos de construcción de todas las superficies."
+                  data-en="Removal of dust and construction residues from all surfaces.">
+              </li>
+              <li data-es="Limpieza profunda de suelos (aspirado, barrido, trapeado y encerado según sea necesario)."
+                  data-en="Deep floor cleaning (vacuuming, sweeping, mopping, and waxing as needed).">
+              </li>
+              <li data-es="Limpieza de ventanas y marcos para eliminar manchas de pintura y polvo."
+                  data-en="Window and frame cleaning to remove paint stains and dust.">
+              </li>
+              <li data-es="Limpieza y desinfección de baños y cocinas."
+                  data-en="Cleaning and disinfection of restrooms and kitchens.">
+              </li>
+              <li data-es="Limpieza de gabinetes, estantes y electrodomésticos nuevos."
+                  data-en="Cleaning of cabinets, shelves, and new appliances.">
+              </li>
+              <li data-es="Eliminación de adhesivos, manchas de pintura y materiales sobrantes."
+                  data-en="Removal of adhesives, paint stains, and leftover materials.">
+              </li>
+              <li data-es="Recolección y eliminación de escombros y residuos post-construcción."
+                  data-en="Debris and post-construction waste collection and disposal.">
+              </li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-es="¡Contáctanos!" data-en="Contact Us!">Contact Us!</a>
         </div>
       </div>
 
@@ -396,73 +480,74 @@
       <div class="carousel-item">
         <div class="services-opt" data-platillo="commercial-cleaning">
           <img src="img/generalImg/services5.png" alt="Residential Cleaning Service">
-          <h2>Residential Cleaning Service</h2>
-          <p>At Osorio Cleaning & Maintenance LLC, we offer professional and reliable
-            residential cleaning services to ensure your home stays clean, organized,
-            and healthy. We offer deep cleaning and light cleaning options, adapting
-            to your needs and the level of maintenance your space requires.
+          <h2 data-en="Residential Cleaning Service" data-es="Servicio de Limpieza Residencial">Residential Cleaning Service</h2>
+          <p data-en="At Osorio Cleaning & Maintenance LLC, we offer professional and reliable residential cleaning services to ensure your home stays clean, organized, and healthy. We offer deep cleaning and light cleaning options, adapting to your needs and the level of maintenance your space requires."
+             data-es="En Osorio Cleaning & Maintenance LLC, ofrecemos servicios de limpieza residencial profesionales y confiables para garantizar que su hogar se mantenga limpio, organizado y saludable. Ofrecemos opciones de limpieza profunda y limpieza ligera, adaptándonos a sus necesidades y al nivel de mantenimiento que su espacio requiera.">
+            At Osorio Cleaning & Maintenance LLC, we offer professional and reliable residential cleaning services to ensure your home stays clean, organized, and healthy. We offer deep cleaning and light cleaning options, adapting to your needs and the level of maintenance your space requires.
           </p>
           <div class="detail">
-            <h3>Residential Cleaning 🔹 Light Cleaning</h3>
-            <P>Ideal for regular home maintenance, helping to keep spaces clean and organized without dirt accumulation.</P>
-            <ul>
-              <li>Sweeping, mopping, and vacuuming floors.</li>
-              <li>Dusting furniture and surfaces.</li>
-              <li>Cleaning bathrooms (sink, toilet, shower, and mirrors)</li>
-              <li>Kitchen cleaning (exterior of appliances, sink, surfaces)</li>
-              <li>Changing bed linens and organizing beds.</li>
-              <li>Taking out the trash and replacing bags.</li>
-              <li>Cleaning interior windows (accessible)</li>
-            </ul>
-            <h3>Residential Cleaning 🔹 Deep Cleaning</h3>
-            <P>Recommended for homes that need a more detailed cleaning, especially after long periods
-              without maintenance or during key moments like moving or special events.
+            <h3 data-en="Residential Cleaning 🔹 Light Cleaning" data-es="Limpieza Residencial 🔹 Limpieza Ligera">Residential Cleaning 🔹 Light Cleaning</h3>
+            <P data-en="Ideal for regular home maintenance, helping to keep spaces clean and organized without dirt accumulation."
+               data-es="Ideal para el mantenimiento regular del hogar, ayudando a mantener los espacios limpios y organizados sin acumulación de suciedad.">
+              Ideal for regular home maintenance, helping to keep spaces clean and organized without dirt accumulation.
             </P>
             <ul>
-              <li>Everything included in light cleaning, plus.</li>
-              <li>Deep cleaning of bathrooms and kitchens (including tiles, behind appliances and furniture)</li>
-              <li> Dusting and cleaning ceiling fans, light fixtures, and baseboards.</li>
-              <li>Deep cleaning of accessible interior and exterior windows.</li>
-              <li>Removal of grease buildup in the kitchen.</li>
-              <li> Cleaning of doors, light switches, and handles.</li>
-              <li>Vacuuming and deep cleaning of carpets and upholstery (as needed)</li>
-              <li>Closet cleaning and basic space organization (optional)</li>
+              <li data-en="Sweeping, mopping, and vacuuming floors." data-es="Barrido, fregado y aspirado de pisos.">Sweeping, mopping, and vacuuming floors.</li>
+              <li data-en="Dusting furniture and surfaces." data-es="Polvo en muebles y superficies.">Dusting furniture and surfaces.</li>
+              <li data-en="Cleaning bathrooms (sink, toilet, shower, and mirrors)" data-es="Limpieza de baños (lavabo, inodoro, ducha y espejos)">Cleaning bathrooms (sink, toilet, shower, and mirrors)</li>
+              <li data-en="Kitchen cleaning (exterior of appliances, sink, surfaces)" data-es="Limpieza de cocina (exterior de electrodomésticos, fregadero, superficies)">Kitchen cleaning (exterior of appliances, sink, surfaces)</li>
+              <li data-en="Changing bed linens and organizing beds." data-es="Cambiar las sábanas y organizar las camas.">Changing bed linens and organizing beds.</li>
+              <li data-en="Taking out the trash and replacing bags." data-es="Sacar la basura y reemplazar las bolsas.">Taking out the trash and replacing bags.</li>
+              <li data-en="Cleaning interior windows (accessible)" data-es="Limpieza de ventanas interiores (accesibles)">Cleaning interior windows (accessible)</li>
+            </ul>
+            <h3 data-en="Residential Cleaning 🔹 Deep Cleaning" data-es="Limpieza Residencial 🔹 Limpieza Profunda">Residential Cleaning 🔹 Deep Cleaning</h3>
+            <P data-en="Recommended for homes that need a more detailed cleaning, especially after long periods without maintenance or during key moments like moving or special events."
+               data-es="Recomendado para hogares que necesitan una limpieza más detallada, especialmente después de largos períodos sin mantenimiento o durante momentos clave como mudanzas o eventos especiales.">
+              Recommended for homes that need a more detailed cleaning, especially after long periods without maintenance or during key moments like moving or special events.
+            </P>
+            <ul>
+              <li data-en="Everything included in light cleaning, plus." data-es="Todo lo incluido en la limpieza ligera, más.">Everything included in light cleaning, plus.</li>
+              <li data-en="Deep cleaning of bathrooms and kitchens (including tiles, behind appliances and furniture)" data-es="Limpieza profunda de baños y cocinas (incluyendo azulejos, detrás de electrodomésticos y muebles)">Deep cleaning of bathrooms and kitchens (including tiles, behind appliances and furniture)</li>
+              <li data-en="Dusting and cleaning ceiling fans, light fixtures, and baseboards." data-es="Polvo y limpieza de ventiladores de techo, luminarias y zócalos.">Dusting and cleaning ceiling fans, light fixtures, and baseboards.</li>
+              <li data-en="Deep cleaning of accessible interior and exterior windows." data-es="Limpieza profunda de ventanas interiores y exteriores accesibles.">Deep cleaning of accessible interior and exterior windows.</li>
+              <li data-en="Removal of grease buildup in the kitchen." data-es="Eliminación de la acumulación de grasa en la cocina.">Removal of grease buildup in the kitchen.</li>
+              <li data-en="Cleaning of doors, light switches, and handles." data-es="Limpieza de puertas, interruptores de luz y manijas.">Cleaning of doors, light switches, and handles.</li>
+              <li data-en="Vacuuming and deep cleaning of carpets and upholstery (as needed)" data-es="Aspirado y limpieza profunda de alfombras y tapicerías (según sea necesario)">Vacuuming and deep cleaning of carpets and upholstery (as needed)</li>
+              <li data-en="Closet cleaning and basic space organization (optional)" data-es="Limpieza de armarios y organización básica del espacio (opcional)">Closet cleaning and basic space organization (optional)</li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-en="Contact Us!" data-es="¡Contáctanos!">Contact Us!</a>
         </div>
       </div>
 
       <!-- Service Card 6 -->
       <div class="carousel-item">
         <div class="services-opt" data-platillo="commercial-cleaning">
-          <img src="img/generalImg/services6.png" alt="Commercial Cleaning">
-          <h2>Handyman Services</h2>
-          <p>At Osorio Cleaning & Maintenance LLC, we offer reliable and professional handyman
-            services to assist you with minor repairs and maintenance in your home, office, or
-            commercial property. We specialize in jobs that do not require a license, ensuring
-            practical, efficient solutions at affordable prices.
+          <img src="img/generalImg/services6.png" alt="Handyman Services">
+          <h2 data-en="Handyman Services" data-es="Servicios de Manitas">Handyman Services</h2>
+          <p data-en="At Osorio Cleaning & Maintenance LLC, we offer reliable and professional handyman services to assist you with minor repairs and maintenance in your home, office, or commercial property. We specialize in jobs that do not require a license, ensuring practical, efficient solutions at affordable prices."
+             data-es="En Osorio Cleaning & Maintenance LLC, ofrecemos servicios de manitas confiables y profesionales para asistirlo con reparaciones menores y mantenimiento en su hogar, oficina o propiedad comercial. Nos especializamos en trabajos que no requieren licencia, asegurando soluciones prácticas y eficientes a precios accesibles.">
+            At Osorio Cleaning & Maintenance LLC, we offer reliable and professional handyman services to assist you with minor repairs and maintenance in your home, office, or commercial property. We specialize in jobs that do not require a license, ensuring practical, efficient solutions at affordable prices.
           </p>
           <div class="detail">
-            <h3>What services do we provide?</h3>
+            <h3 data-en="What services do we provide?" data-es="¿Qué servicios ofrecemos?">What services do we provide?</h3>
             <ul>
-              <li>Minor repairs on doors and windows (adjustments, lock installation, hinge replacement)</li>
-              <li>Interior and exterior painting (touch-ups and full application)</li>
-              <li>Drywall repair and patching (small cracks and holes)</li>
-              <li>Replacement and installation of handles, knobs, and locks.</li>
-              <li>Cleaning and maintenance of outdoor areas (patios, terraces, sidewalks)</li>
-              <li>Pressure washing (Pressure Washing) on driveways, facades, and sidewalks.</li>
-              <li>Sealing cracks in floors and walls.</li>
-              <li>Furniture maintenance and assembly of new products.</li>
-              <li>Installation and replacement of ceiling fans (as long as it’s just the mounting, no electrical changes)</li>
-              <li>Replacing light bulbs and basic lighting fixtures.</li>
-              <li> Replacement of toilet seats and bathroom accessories.</li>
-              <li>Replacing faucets and showerheads (without modifying pipes or internal connections)</li>
-              <li>Basic organization and storage improvements (closets, pantries, garages).</li>
-
+              <li data-en="Minor repairs on doors and windows (adjustments, lock installation, hinge replacement)" data-es="Reparaciones menores en puertas y ventanas (ajustes, instalación de cerraduras, reemplazo de bisagras)">Minor repairs on doors and windows (adjustments, lock installation, hinge replacement)</li>
+              <li data-en="Interior and exterior painting (touch-ups and full application)" data-es="Pintura interior y exterior (retoques y aplicación completa)">Interior and exterior painting (touch-ups and full application)</li>
+              <li data-en="Drywall repair and patching (small cracks and holes)" data-es="Reparación y parcheo de paneles de yeso (pequeñas grietas y agujeros)">Drywall repair and patching (small cracks and holes)</li>
+              <li data-en="Replacement and installation of handles, knobs, and locks." data-es="Reemplazo e instalación de manijas, perillas y cerraduras.">Replacement and installation of handles, knobs, and locks.</li>
+              <li data-en="Cleaning and maintenance of outdoor areas (patios, terraces, sidewalks)" data-es="Limpieza y mantenimiento de áreas exteriores (patios, terrazas, aceras)">Cleaning and maintenance of outdoor areas (patios, terraces, sidewalks)</li>
+              <li data-en="Pressure washing (Pressure Washing) on driveways, facades, and sidewalks." data-es="Lavado a presión (Pressure Washing) en entradas, fachadas y aceras.">Pressure washing (Pressure Washing) on driveways, facades, and sidewalks.</li>
+              <li data-en="Sealing cracks in floors and walls." data-es="Sellado de grietas en pisos y paredes.">Sealing cracks in floors and walls.</li>
+              <li data-en="Furniture maintenance and assembly of new products." data-es="Mantenimiento de muebles y ensamblaje de productos nuevos.">Furniture maintenance and assembly of new products.</li>
+              <li data-en="Installation and replacement of ceiling fans (as long as it’s just the mounting, no electrical changes)" data-es="Instalación y reemplazo de ventiladores de techo (siempre que solo sea el montaje, sin cambios eléctricos)">Installation and replacement of ceiling fans (as long as it’s just the mounting, no electrical changes)</li>
+              <li data-en="Replacing light bulbs and basic lighting fixtures." data-es="Reemplazo de bombillas y luminarias básicas.">Replacing light bulbs and basic lighting fixtures.</li>
+              <li data-en="Replacement of toilet seats and bathroom accessories." data-es="Reemplazo de asientos de inodoro y accesorios de baño.">Replacement of toilet seats and bathroom accessories.</li>
+              <li data-en="Replacing faucets and showerheads (without modifying pipes or internal connections)" data-es="Reemplazo de grifos y cabezales de ducha (sin modificar tuberías ni conexiones internas)">Replacing faucets and showerheads (without modifying pipes or internal connections)</li>
+              <li data-en="Basic organization and storage improvements (closets, pantries, garages)." data-es="Mejoras básicas de organización y almacenamiento (armarios, despensas, garajes).">Basic organization and storage improvements (closets, pantries, garages)</li>
             </ul>
           </div>
-          <button class="btn-contact-services">Contact Us!</button>
+          <a class="btn-contact-services" href="#contact" data-en="Contact Us!" data-es="¡Contáctanos!">Contact Us!</a>
         </div>
       </div>
 
@@ -483,155 +568,227 @@
 </section>
 
 <section class="section-projects contenedor" id="projects">
-  <h2 class="texto-projects">Projects</h2>
+  <h2 class="texto-projects" data-en="Projects" data-es="Proyectos">Projects</h2>
 
   <div class="btn-projects">
-    <button class="ALL btn btn-verde">All</button>
-    <button class="PCC btn btn-verde">Post-Construction Cleaning</button>
-    <button class="CS btn btn-verde">Cleaning Services</button>
-    <button class="GM btn btn-verde">General Maintenance</button>
+    <button class="btn btn-verde" data-category="ALL" data-en="All" data-es="Todos">All</button>
+    <button class="btn btn-verde" data-category="PCC" data-en="Post-Construction Cleaning" data-es="Limpieza Post-Construcción">Post-Construction Cleaning</button>
+    <button class="btn btn-verde" data-category="CS" data-en="Cleaning Services" data-es="Servicios de Limpieza">Cleaning Services</button>
+    <button class="btn btn-verde" data-category="GM" data-en="General Maintenance" data-es="Mantenimiento General">General Maintenance</button>
   </div>
   <div class="projects">
 
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza1.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza1.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Before / After" data-es="Antes / Después">Before / After</p>
+      </div>
+      <h2 data-en="Janitorial Service" data-es="Servicio de Limpieza">Janitorial Service</h2>
+      <p data-en="Cleaning service is provided to our clients." data-es="Se proporciona servicio de limpieza a nuestros clientes.">Cleaning service is provided to our clients.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza2.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza2.2.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We provide quality services." data-es="Brindamos servicios de calidad.">We provide quality services.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza3.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza3.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We adapt to your needs." data-es="Nos adaptamos a tus necesidades.">We adapt to your needs.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza3.2.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza3.3.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We want our customers to be satisfied." data-es="Queremos que nuestros clientes estén satisfechos.">We want our customers to be satisfied.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza4.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza4.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Pressure Cleaning" data-es="Limpieza a Presión">Pressure Cleaning</h2>
+      <p data-en="With our pressure washing we guarantee quality cleanings." data-es="Con nuestra limpieza a presión garantizamos limpiezas de calidad.">With our pressure washing we guarantee quality cleanings.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/LM2.jpeg" class="before"/>
+        <img src="img/Projects/LM2.2.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We keep your work area clean." data-es="Mantenemos limpia tu área de trabajo.">We keep your work area clean.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/LM3.jpeg." class="before"/>
+        <img src="img/Projects/LM3.1.jpeg." class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We keep your work area clean." data-es="Mantenemos limpia tu área de trabajo.">We keep your work area clean.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project CS">
+      <div class="image-hover">
+        <img src="img/Projects/Limpieza5.jpeg" class="before"/>
+        <img src="img/Projects/Limpieza5.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      </div>
+      <h2 data-en="Cleaning Service" data-es="Servicio de Limpieza">Cleaning Service</h2>
+      <p data-en="We keep your work area clean." data-es="Mantenemos limpia tu área de trabajo.">We keep your work area clean.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project GM">
+      <div class="image-hover">
+        <img src="img/Projects/M1.jpeg" class="before"/>
+        <img src="img/Projects/M1.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our Work" data-es="Nuestro trabajo">Our Work</p>
+      </div>
+      <h2 data-en="Maintenance Service" data-es="Servicio de Mantenimiento">Maintenance Service</h2>
+      <p data-en="We maintain whatever you need." data-es="Mantenemos lo que necesites.">We maintain whatever you need.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
+    <div class="project GM">
+      <div class="image-hover">
+        <img src="img/Projects/LM1.jpeg" class="before"/>
+        <img src="img/Projects/LM1.1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our Work" data-es="Nuestro trabajo">Our Work</p>
+      </div>
+      <h2 data-en="Maintenance Service" data-es="Servicio de Mantenimiento">Maintenance Service</h2>
+      <p data-en="We maintain whatever you need." data-es="Mantenemos lo que necesites.">We maintain whatever you need.</p>
+      <div class="service-name">
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
+      </div>
+    </div>
+
     <!-- Post-Construction Cleaning -->
-    <div class="projects">
+    <div class="project PCC">
       <div class="image-hover">
-        <img src="img/HomeImg/Image3.png" class="before"/>
-        <img src="img/HomeImg/Image4.png" class="after"/>
-        <p class="hover-text">Before / After</p>
+        <img src="img/Projects/Post-Const1.1.jpeg" class="before"/>
+        <img src="img/Projects/Post-Const1.jpeg" class="after"/>
+        <p class="hover-text" data-en="Our Work" data-es="Nuestro trabajo">Our Work</p>
       </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
+      <h2 data-en="Post-Construction Cleaning" data-es="Limpieza Post-Construcción">Post-Construction Cleaning</h2>
+      <p data-en="We keep your areas clean after construction." data-es="Mantenemos tus áreas limpias después de la construcción.">We keep your areas clean after construction.</p>
       <div class="service-name">
-        <button>Contact!</button>
+        <a href="#contact" data-en="Contact!" data-es="¡Contáctanos!">Contact!</a>
       </div>
     </div>
 
-    <div class="projects">
-      <div class="image-hover">
-        <img src="img/HomeImg/Image1.png" class="before"/>
-        <img src="img/HomeImg/Image2.png" class="after"/>
-        <p class="hover-text">Before / After</p>
-      </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
-      <div class="service-name">
-        <button>Contact!</button>
-      </div>
-    </div>
+  </div>
 
-    <div class="projects">
-      <div class="image-hover">
-        <img src="img/HomeImg/Image5.png" class="before"/>
-        <img src="img/HomeImg/Image6.png" class="after"/>
-        <p class="hover-text">Before / After</p>
-      </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
-      <div class="service-name">
-        <button>Contact!</button>
-      </div>
-    </div>
-
-    <div class="projects">
-      <div class="image-hover">
-        <img src="img/HomeImg/Image5.png" class="before"/>
-        <img src="img/HomeImg/Image6.png" class="after"/>
-        <p class="hover-text">Before / After</p>
-      </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
-      <div class="service-name">
-        <button>Contact!</button>
-      </div>
-    </div>
-
-    <div class="projects">
-      <div class="image-hover">
-        <img src="img/HomeImg/Image5.png" class="before"/>
-        <img src="img/HomeImg/Image6.png" class="after"/>
-        <p class="hover-text">Before / After</p>
-      </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
-      <div class="service-name">
-        <button>Contact!</button>
-      </div>
-    </div>
-
-    <div class="projects">
-      <div class="image-hover">
-        <img src="img/HomeImg/Image5.png" class="before"/>
-        <img src="img/HomeImg/Image6.png" class="after"/>
-        <p class="hover-text">Before / After</p>
-      </div>
-      <h2>Janitorial Service</h2>
-      <p>Janitorial service is provided to our client for their common areas.</p>
-      <div class="service-name">
-        <button>Contact!</button>
-      </div>
-    </div>
-
+  <div class="pagination">
+    <button id="prevPage" class="btn btn-verde" data-en="Previous" data-es="Anterior">Previous</button>
+    <span id="pageIndicator">1</span>
+    <button id="nextPage" class="btn btn-verde" data-en="Next" data-es="Siguiente">Next</button>
   </div>
 </section>
 
 <div class="separador">
-    <div class="contenido-separador contenedor">
-      <h2>We clean, We fix, We care!</h2>
-      <p>Our highly trained team takes care of every detail with efficiency and professionalism, guaranteeing a reliable service tailored to your needs.</p>
-      <a href="#contact" class="btn btn-verde">Get a quote now!</a>
-    </div>
+  <div class="contenido-separador contenedor">
+    <h2 data-en="We clean, We fix, We care!" data-es="¡Limpiamos, Reparamos, Cuidamos!">We clean, We fix, We care!</h2>
+    <p data-en="Our highly trained team takes care of every detail with efficiency and professionalism, guaranteeing a reliable service tailored to your needs." data-es="Nuestro equipo altamente capacitado se encarga de cada detalle con eficiencia y profesionalismo, garantizando un servicio confiable adaptado a sus necesidades.">
+      Our highly trained team takes care of every detail with efficiency and professionalism, guaranteeing a reliable service tailored to your needs.
+    </p>
+    <a href="#contact" class="btn btn-verde" data-en="Get a quote now!" data-es="¡Obtén una cotización ahora!">Get a quote now!</a>
+  </div>
 </div>
 
 <section id="testimonies" class="testimonies contenedor">
-  <h2>Testimonies</h2>
+  <h2 data-en="Testimonies" data-es="Testimonios">Testimonies</h2>
   <div class="contenido-testimonies">
     <div class="texto-feedback">
-      <h3>Excellence lies in the quality and efficiency of our services, for this, we like to see
-        the perspective and comments of our work in each client.
+      <h3 data-en="Excellence lies in the quality and efficiency of our services, for this, we like to see the perspective and comments of our work in each client." data-es="La excelencia radica en la calidad y eficiencia de nuestros servicios, por ello nos gusta ver la perspectiva y comentarios de nuestro trabajo en cada cliente.">
+        Excellence lies in the quality and efficiency of our services, for this, we like to see the perspective and comments of our work in each client.
       </h3>
-      <p>We show you the testimonials of our clients and their experience acquiring our services.</p>
-      <a href="#services" class="btn btn-verde">Services Detail</a>
+      <p data-en="We show you the testimonials of our clients and their experience acquiring our services." data-es="Le mostramos los testimonios de nuestros clientes y su experiencia al adquirir nuestros servicios.">
+        We show you the testimonials of our clients and their experience acquiring our services.
+      </p>
+      <a href="#services" class="btn btn-verde" data-en="Services Detail" data-es="Detalles de Servicios">Services Detail</a>
     </div>
     <div class="card-testimonies swiper">
       <div class="swiper-wrapper">
         <!-- Testimonio 1 -->
         <div class="swiper-slide testimony-card">
-          <img src="img/testimonies/userClient1.png"  alt="Client Image">
+          <img src="img/testimonies/userClient1.png" alt="Client Image">
           <div class="stars">★★★★★</div>
-          <h3>John Doe</h3>
-          <p>Great service! Very professional and efficient.</p>
+          <h3 data-en="Carlos M. - Miami, FL" data-es="Carlos M. - Miami, FL">Carlos M. - Miami, FL</h3>
+          <p data-en="I couldn't be happier with the pressure cleaning service from Osorio Cleaning. My entrance and patio were covered in mold stains and accumulated dirt, and after the service, they looked brand new. The difference was immediately noticeable. They were very punctual, professional, and careful with every detail. Also, the price was fair for the quality of work. I will definitely call them again and recommend them 100%."
+             data-es="No puedo estar más feliz con el servicio de limpieza a presión de Osorio Cleaning. Mi entrada y patio estaban llenos de manchas de moho y suciedad acumulada, y después del servicio quedaron como nuevos. Se notó la diferencia de inmediato. Fueron muy puntuales, profesionales y cuidadosos con cada detalle. Además, el precio fue justo por la calidad del trabajo. Definitivamente los llamaré de nuevo y los recomiendo al 100%.">
+            No puedo estar más feliz con el servicio de limpieza a presión de Osorio Cleaning. Mi entrada y patio estaban llenos de manchas de moho y suciedad acumulada, y después del servicio quedaron como nuevos. Se notó la diferencia de inmediato. Fueron muy puntuales, profesionales y cuidadosos con cada detalle. Además, el precio fue justo por la calidad del trabajo. Definitivamente los llamaré de nuevo y los recomiendo al 100%.
+          </p>
         </div>
+
         <!-- Testimonio 2 -->
         <div class="swiper-slide testimony-card">
-          <img src="img/testimonies/userClient1.png"  alt="Client Image">
-          <div class="stars">★★★★☆</div>
-          <h3>Jane Smith</h3>
-          <p>Very satisfied with the cleaning service. Highly recommended!</p>
+          <img src="img/generalImg/user-profile-Girls.png" alt="Client Image">
+          <div class="stars">★★★★★</div>
+          <h3 data-en="Maria R. - Condominium Manager in Broward" data-es="María R. - Administradora de Condominio en Broward">María R. - Administradora de Condominio en Broward</h3>
+          <p data-en="Hiring Osorio Cleaning & Maintenance LLC for the maintenance and cleaning of our condominium has been one of the best decisions we've made. From day one, their team has proven to be professional, responsible, and very detail-oriented in their work. The common areas, hallways, and lobby are always spotless, and any additional requests are handled quickly and efficiently. It is clear that they care about the quality of service and the satisfaction of the residents. I highly recommend them for any community looking for reliable cleaning and maintenance services!"
+             data-es="Contratar a Osorio Cleaning & Maintenance LLC para el mantenimiento y limpieza de nuestro condominio ha sido una de las mejores decisiones que hemos tomado. Desde el primer día, su equipo ha demostrado ser profesional, responsable y muy detallista en su trabajo. Las áreas comunes, pasillos y el lobby siempre están impecables, y cualquier solicitud adicional la atienden con rapidez y eficiencia. Se nota que les importa la calidad del servicio y la satisfacción de los residentes. ¡Totalmente recomendados para cualquier comunidad que busque un servicio de limpieza y mantenimiento confiable!">
+            Contratar a Osorio Cleaning & Maintenance LLC para el mantenimiento y limpieza de nuestro condominio ha sido una de las mejores decisiones que hemos tomado. Desde el primer día, su equipo ha demostrado ser profesional, responsable y muy detallista en su trabajo. Las áreas comunes, pasillos y el lobby siempre están impecables, y cualquier solicitud adicional la atienden con rapidez y eficiencia. Se nota que les importa la calidad del servicio y la satisfacción de los residentes. ¡Totalmente recomendados para cualquier comunidad que busque un servicio de limpieza y mantenimiento confiable!
+          </p>
         </div>
+
         <!-- Testimonio 3 -->
         <div class="swiper-slide testimony-card">
           <img src="img/testimonies/userClient1.png" alt="Client Image">
           <div class="stars">★★★★★</div>
-          <h3>Michael Johnson</h3>
-          <p>Excellent work! My place looks brand new.</p>
+          <h3 data-en="Luis G. - Miami, FL" data-es="Luis G. - Director de Proyecto en Orlando">Luis G. - Director de Proyecto en Orlando</h3>
+          <p data-en="The pressure cleaning service provided by Osorio Cleaning & Maintenance LLC is unbeatable. The team was punctual and worked efficiently, achieving exceptional results. The exterior surfaces of our office have never looked so clean. Additionally, their attention to detail and professional attitude were greatly appreciated. I definitely recommend Osorio Cleaning to any company looking for reliable and high-quality service."
+             data-es="El servicio de limpieza a presión que ofrece Osorio Cleaning & Maintenance LLC es insuperable. El equipo fue puntual y trabajó eficientemente, logrando resultados excepcionales. Las superficies exteriores de nuestra oficina nunca se habían visto tan limpias. Además, su atención al detalle y su actitud profesional fueron muy apreciadas. Sin duda, recomiendo a Osorio Cleaning a cualquier empresa que busque un servicio confiable y de calidad.">
+            El servicio de limpieza a presión que ofrece Osorio Cleaning es insuperable. El equipo fue puntual y trabajó eficientemente, logrando resultados excepcionales. Las superficies exteriores de nuestra oficina nunca se habían visto tan limpias. Además, su atención al detalle y su actitud profesional fueron muy apreciadas. Sin duda, recomiendo a Osorio Cleaning a cualquier empresa que busque un servicio confiable y de calidad.
+          </p>
         </div>
 
-        <!-- Testimonio 4 -->
-        <div class="swiper-slide testimony-card">
-          <img src="img/testimonies/userClient1.png" alt="Client Image">
-          <div class="stars">★★★★★</div>
-          <h3>Michael Johnson</h3>
-          <p>Excellent work! My place looks brand new.</p>
-        </div>
 
-        <!-- Testimonio 5 -->
-        <div class="swiper-slide testimony-card">
-          <img src="img/testimonies/userClient1.png" alt="Client Image">
-          <div class="stars">★★★★★</div>
-          <h3>Michael Johnson</h3>
-          <p>Excellent work! My place looks brand new.</p>
-        </div>
       </div>
       <!-- Botones de navegación -->
       <div class="swiper-button-next"></div>
@@ -644,97 +801,101 @@
 
 </section>
 
-
 <section id="contact">
   <div class="formulario-contacto contenedor">
     <div class="informacion-contacto">
-      <h3>Contact Us!</h3>
+      <h3 data-en="Contact Us!" data-es="¡Contáctanos!">Contact Us!</h3>
       <p><i class="fas fa-map-marker-alt"></i>
-         Miami - Dade and Broward County
+        <span data-en="Miami - Dade and Broward County" data-es="Miami - Condado de Dade y Broward">Miami - Dade and Broward County</span>
       </p>
-      <p><i class="fas fa-envelope"></i>aaron.osorio004@gmail.com</p>
-      <p><i class="fas fa-phone-alt"></i>+1 (786) 516-8447</p>
+      <p><i class="fas fa-envelope"></i>
+        <span data-en="aaron.osorio004@gmail.com" data-es="aaron.osorio004@gmail.com">aaron.osorio004@gmail.com</span>
+      </p>
+      <p><i class="fas fa-phone-alt"></i>
+        <span data-en="+1 (786) 516-8447" data-es="+1 (786) 516-8447">+1 (786) 516-8447</span>
+      </p>
     </div>
 
     <!-- Formulario de contacto -->
     <form class="formulario">
       <div class="input-formulario">
-        <label for="nombre">Full Name</label>
+        <label for="nombre" data-en="Full Name" data-es="Nombre Completo">Full Name</label>
         <input type="text" placeholder="John Doe" id="nombre" required>
       </div>
       <div class="input-formulario">
-        <label for="correo">Email</label>
+        <label for="correo" data-en="Email" data-es="Correo Electrónico">Email</label>
         <input type="email" placeholder="example@email.com" id="correo" required>
       </div>
       <div class="input-formulario">
-        <label for="telefono">Phone Number</label>
+        <label for="telefono" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
         <input type="tel" placeholder="+1 234 567 890" id="telefono" required>
       </div>
       <div class="input-formulario">
-        <label for="tipo-servicio">Type of Service</label>
+        <label for="tipo-servicio" data-en="Type of Service" data-es="Tipo de Servicio">Type of Service</label>
         <select id="tipo-servicio" required>
-          <option value="">Select a Service</option>
-          <option value="janitoral">Janitoral Services</option>
-          <option value="maintenance">Handyman Services</option>
-          <option value="repair">Commercial Cleaning</option>
-          <option value="repair">Pressure Cleaning</option>
-          <option value="repair">Post-Construction Cleaning</option>
-          <option value="repair">Residential Cleaning Service</option>
+          <option value="" data-en="Select a Service" data-es="Selecciona un Servicio">Select a Service</option>
+          <option value="janitoral" data-en="Janitorial Services" data-es="Servicios de Limpieza">Janitorial Services</option>
+          <option value="maintenance" data-en="Handyman Services" data-es="Servicios de Mantenimiento">Handyman Services</option>
+          <option value="repair" data-en="Commercial Cleaning" data-es="Limpieza Comercial">Commercial Cleaning</option>
+          <option value="repair" data-en="Pressure Cleaning" data-es="Limpieza a Presión">Pressure Cleaning</option>
+          <option value="repair" data-en="Post-Construction Cleaning" data-es="Limpieza Post-Construcción">Post-Construction Cleaning</option>
+          <option value="repair" data-en="Residential Cleaning Service" data-es="Servicio de Limpieza Residencial">Residential Cleaning Service</option>
         </select>
       </div>
       <div class="input-formulario">
-        <label for="direccion">Exact Service Address</label>
+        <label for="direccion" data-en="Exact Service Address" data-es="Dirección Exacta del Servicio">Exact Service Address</label>
         <input type="text" placeholder="123 Main St, Miami, FL" id="direccion" required>
       </div>
       <div class="input-formulario">
-        <label for="tipo-propiedad">Property Type</label>
+        <label for="tipo-propiedad" data-en="Property Type" data-es="Tipo de Propiedad">Property Type</label>
         <select id="tipo-propiedad" required>
-          <option value="">Select Property Type</option>
-          <option value="residential">Residential</option>
-          <option value="commercial">Commercial</option>
-          <option value="apartments">Apartment Building</option>
-          <option value="office">Office</option>
+          <option value="" data-en="Select Property Type" data-es="Selecciona Tipo de Propiedad">Select Property Type</option>
+          <option value="residential" data-en="Residential" data-es="Residencial">Residential</option>
+          <option value="commercial" data-en="Commercial" data-es="Comercial">Commercial</option>
+          <option value="apartments" data-en="Apartment Building" data-es="Edificio de Apartamentos">Apartment Building</option>
+          <option value="office" data-en="Office" data-es="Oficina">Office</option>
         </select>
       </div>
       <div class="input-formulario">
-        <label for="frecuencia">Service Frequency</label>
+        <label for="frecuencia" data-en="Service Frequency" data-es="Frecuencia del Servicio">Service Frequency</label>
         <select id="frecuencia">
-          <option value="">Select Frequency</option>
-          <option value="one-time">One-time</option>
-          <option value="weekly">Weekly</option>
-          <option value="bi-weekly">Bi-weekly</option>
-          <option value="monthly">Monthly</option>
-          <option value="other">Other</option>
+          <option value="" data-en="Select Frequency" data-es="Selecciona Frecuencia">Select Frequency</option>
+          <option value="one-time" data-en="One-time" data-es="Única vez">One-time</option>
+          <option value="weekly" data-en="Weekly" data-es="Semanal">Weekly</option>
+          <option value="bi-weekly" data-en="Bi-weekly" data-es="Quincenal">Bi-weekly</option>
+          <option value="monthly" data-en="Monthly" data-es="Mensual">Monthly</option>
+          <option value="other" data-en="Other" data-es="Otro">Other</option>
         </select>
       </div>
       <div class="input-formulario">
-        <label for="metraje">Approximate Area (sq ft)</label>
+        <label for="metraje" data-en="Approximate Area (sq ft)" data-es="Área Aproximada (pies cuadrados)">Approximate Area (sq ft)</label>
         <input type="text" placeholder="2000 sq ft (optional)" id="metraje">
       </div>
       <div class="input-formulario">
-        <label for="fecha">Date or Date Range</label>
+        <label for="fecha" data-en="Date or Date Range" data-es="Fecha o Rango de Fechas">Date or Date Range</label>
         <input type="datetime-local" placeholder="MM/DD/YYYY or date range" id="fecha" required>
       </div>
       <div class="input-formulario">
-        <label for="detalles">Additional Details</label>
+        <label for="detalles" data-en="Additional Details" data-es="Detalles Adicionales">Additional Details</label>
         <textarea id="detalles" placeholder="Describe your needs..." required></textarea>
       </div>
       <div class="input-formulario">
-        <label for="como-nos-encontro">How did you find us?</label>
+        <label for="como-nos-encontro" data-en="How did you find us?" data-es="¿Cómo nos encontró?">How did you find us?</label>
         <select id="como-nos-encontro">
-          <option value="">Select an Option</option>
-          <option value="google">Google</option>
-          <option value="social-media">Social Media</option>
-          <option value="referral">Referral</option>
-          <option value="other">Other</option>
+          <option value="" data-en="Select an Option" data-es="Selecciona una Opción">Select an Option</option>
+          <option value="google" data-en="Google" data-es="Google">Google</option>
+          <option value="social-media" data-en="Social Media" data-es="Redes Sociales">Social Media</option>
+          <option value="referral" data-en="Referral" data-es="Referencia">Referral</option>
+          <option value="other" data-en="Other" data-es="Otro">Other</option>
         </select>
       </div>
       <div class="btn-formulario">
-        <input type="submit" class="btn btn-verde" value="Send">
+        <input type="submit" class="btn btn-verde" data-en="Send" data-es="Enviar" value="Send">
       </div>
     </form>
   </div>
 </section>
+
 
 <!-- Botón flotante de Scroll -->
 <button id="scrollTopBtn" class="floating-btn scroll-btn">
@@ -746,42 +907,39 @@
   <i class="fas fa-envelope"></i>
 </a>
 
-<div class="pie-pagina ">
-    <div class="contenedor-piepagina contenedor">
-      <!-- Logo -->
-      <div class="logo-footer">
-        <img src="img/generalImg/Logo_WhiteColor.png" alt="Company Logo">
-      </div>
-      <div class="info">
-        <h3>Service locations</h3>
-        <p>Miami - Dade and Broward County</p>
-      </div>
-      <div class="info">
-        <h3>Días especiales</h3>
-        <p>Sabados y Jueves 7am - 11pm</p>
-        <p>+3123410921</p>
-      </div>
-      <div class="info">
-        <h3>Schedules</h3>
-        <p>🕒 Monday to Saturday: 7:00 AM – 7:00 PM</p>
-        <p>
-          🕒 Sundays: Service available by appointment
-        </p>
-      </div>
-      <div class="info">
-        <p>We also offer services at times that suit your convenience.</p>
-        <p>Contact us to arrange urgent or after-hours services.</p>
-      </div>
+<div class="pie-pagina">
+  <div class="contenedor-piepagina contenedor">
+    <!-- Logo -->
+    <div class="logo-footer">
+      <img src="img/generalImg/Logo_WhiteColor.png" alt="Company Logo">
+    </div>
+    <div class="info">
+      <h3 data-en="Service locations" data-es="Ubicaciones del servicio">Service locations</h3>
+      <p data-en="Miami - Dade and Broward County" data-es="Miami - Condado de Dade y Broward">Miami - Dade and Broward County</p>
+    </div>
+    <div class="info">
+      <h3 data-en="Schedules" data-es="Horarios">Schedules</h3>
+      <p data-en="🕒 Monday to Saturday: 7:00 AM – 7:00 PM" data-es="🕒 Lunes a Sábado: 7:00 AM – 7:00 PM">🕒 Monday to Saturday: 7:00 AM – 7:00 PM</p>
+      <p data-en="🕒 Sundays: Service available by appointment" data-es="🕒 Domingos: Servicio disponible con cita previa">🕒 Sundays: Service available by appointment</p>
+    </div>
+    <div class="info">
+      <p data-en="We also offer services at times that suit your convenience." data-es="También ofrecemos servicios en horarios que se adapten a su conveniencia.">We also offer services at times that suit your convenience.</p>
+      <p data-en="Contact us to arrange urgent or after-hours services." data-es="Contáctenos para organizar servicios urgentes o fuera de horario.">Contact us to arrange urgent or after-hours services.</p>
     </div>
   </div>
-  <footer class="footer">
-    <p>All rights reserved &copy; 2025 Osorio Cleaning & Maintenance LLC, Developed by <a href="https://angiegarro.github.io/Index.html">Moondev</a></p>
-  </footer>
+</div>
+
+<footer class="footer">
+  <p data-en="All rights reserved &copy; 2025 Osorio Cleaning & Maintenance LLC, Developed by" data-es="Todos los derechos reservados &copy; 2025 Osorio Cleaning & Maintenance LLC.">
+    All rights reserved &copy; 2025 Osorio Cleaning & Maintenance LLC.
+  </p> <a href="https://angiegarro.github.io/Index.html">Developed by Moondev</a>
+</footer>
 
 
 <script src="js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
@@ -822,6 +980,171 @@
 
     window.addEventListener("scroll", revealImages);
     revealImages(); // Para cargar las imágenes visibles al inicio
+  });
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const projectsContainer = document.querySelector(".projects");
+    const allProjects = Array.from(document.querySelectorAll(".project")); // Obtener solo los proyectos
+    const filterButtons = document.querySelectorAll(".btn-projects .btn");
+    const prevPageBtn = document.getElementById("prevPage");
+    const nextPageBtn = document.getElementById("nextPage");
+    const pageIndicator = document.getElementById("pageIndicator");
+
+    let filteredProjects = [...allProjects];
+    let currentPage = 1;
+    const itemsPerPage = 4;
+
+    function renderProjects() {
+      projectsContainer.innerHTML = ""; // Vaciar el contenedor antes de agregar elementos
+
+      if (filteredProjects.length === 0) {
+        projectsContainer.innerHTML = "<p>No projects found.</p>";
+        prevPageBtn.disabled = true;
+        nextPageBtn.disabled = true;
+        return;
+      }
+
+      let start = (currentPage - 1) * itemsPerPage;
+      let end = start + itemsPerPage;
+      let paginatedProjects = filteredProjects.slice(start, end);
+
+      paginatedProjects.forEach(project => {
+        projectsContainer.appendChild(project);
+      });
+
+      pageIndicator.textContent = currentPage;
+      prevPageBtn.disabled = currentPage === 1;
+      nextPageBtn.disabled = currentPage * itemsPerPage >= filteredProjects.length;
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const category = button.getAttribute("data-category");
+        filteredProjects = category === "ALL"
+          ? allProjects
+          : allProjects.filter(p => p.classList.contains(category));
+
+        currentPage = 1;
+        renderProjects();
+      });
+    });
+
+    prevPageBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderProjects();
+      }
+    });
+
+    nextPageBtn.addEventListener("click", () => {
+      if (currentPage * itemsPerPage < filteredProjects.length) {
+        currentPage++;
+        renderProjects();
+      }
+    });
+
+    renderProjects();
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("hKKxSNlEJMfwz7ybA");
+
+    document.querySelector(".formulario").addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita el envío predeterminado
+
+      // Capturar los datos del formulario
+      const formData = {
+        nombre: document.getElementById("nombre").value,
+        correo: document.getElementById("correo").value,
+        telefono: document.getElementById("telefono").value,
+        tipoServicio: document.getElementById("tipo-servicio").value,
+        direccion: document.getElementById("direccion").value,
+        tipoPropiedad: document.getElementById("tipo-propiedad").value,
+        frecuencia: document.getElementById("frecuencia").value,
+        metraje: document.getElementById("metraje").value,
+        fecha: document.getElementById("fecha").value,
+        detalles: document.getElementById("detalles").value,
+        comoNosEncontro: document.getElementById("como-nos-encontro").value,
+      };
+
+      // Enviar datos con EmailJS
+      emailjs.send("service_ao61zib", "template_j7ko9fj", formData)
+        .then(function (response) {
+          Swal.fire({
+            title: "Success!",
+            text: "Formulario enviado con éxito.",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+          document.querySelector(".formulario").reset(); // Limpiar formulario
+        }, function (error) {
+          Swal.fire({
+            title: "Error!",
+            text: "Hubo un problema al enviar el formulario.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+          console.error("Error:", error);
+        });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    const navLinks = document.querySelectorAll(".navegacion a");
+
+    function isMobileView() {
+      return window.innerWidth < 992; // Ajusta este valor según tu diseño
+    }
+
+    function toggleMenu() {
+      if (isMobileView()) {
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+          navMenu.style.display = "flex";
+        } else {
+          navMenu.style.display = "none";
+        }
+      }
+    }
+
+    // Alternar menú al presionar el botón hamburguesa solo en modo responsive
+    menuToggle.addEventListener("click", function (event) {
+      if (isMobileView()) {
+        event.stopPropagation(); // Evita que se cierre inmediatamente al hacer clic
+        toggleMenu();
+      }
+    });
+
+    // Cerrar el menú al hacer clic en una opción solo en modo responsive
+    navLinks.forEach(link => {
+      link.addEventListener("click", function () {
+        if (isMobileView()) {
+          navMenu.style.display = "none";
+        }
+      });
+    });
+
+    // Cerrar el menú si se hace clic fuera de él solo en modo responsive
+    document.addEventListener("click", function (event) {
+      if (isMobileView() && !navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        navMenu.style.display = "none";
+      }
+    });
+
+    // Restaurar la visibilidad del menú en pantallas grandes
+    window.addEventListener("resize", function () {
+      if (!isMobileView()) {
+        navMenu.style.display = "flex"; // Asegurar que se muestre en modo escritorio
+      }
+    });
   });
 
 </script>
