@@ -423,6 +423,7 @@ header a img {
   text-align: left;
   color: var(--oscuro);
   display: none;
+
 }
 
 .list .item:nth-child(2) .content{
@@ -437,6 +438,7 @@ header a img {
   line-height: 1;
   opacity: 0;
   animation: animate 1s ease-in-out 0.3s 1 forwards;
+  text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
 }
 
 .content .name{
@@ -450,15 +452,19 @@ header a img {
   animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-.content .des{
+.content .des {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 18px;
   margin-left: 5px;
-font-weight: bold;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6); /* Blanco con 60% de opacidad */
+  padding: 10px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
   opacity: 0;
   animation: animate 1s ease-in-out 0.9s 1 forwards;
 }
+
 
 .content .btn{
   margin-left: 5px;
@@ -602,16 +608,166 @@ font-weight: bold;
   }
 
   .list .item .content{
-    top: 40%;
+    top: 50%;
   }
 
   .content .title, .content .name{
-    font-size: 45px;
+    font-size: 40px;
   }
 
-  .content .btn button{
-    padding: 10px 15px;
-    font-size: 14px;
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content .des {
+    position: absolute;
+    width: 90%;
+    max-width: 290px;
+    margin-bottom: 5%;
+    margin-right: 35%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.9s 1 forwards;
+    z-index: 99999 !important;
+  }
+
+  .content .btn {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 170px;
+    position: relative;
+    z-index: 100000;
+    margin-right: 35%;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .content .btn a{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .content .btn a:nth-child(1){
+    background: var(--Azul);
+    color: var(--blanco);
+    border: 2px solid var(--Azul);
+    transition: 0.3s;
+  }
+
+  .content .btn a:nth-child(2){
+    background: var(--Azul);
+    color: var(--blanco);
+    border: 2px solid var(--Azul);
+    transition: 0.3s;
+  }
+
+  .content .btn a:nth-child(2):hover{
+    background-color: var(--blanco);
+    color: var(--Azul);
+    border-color: var(--Azul);
+  }
+
+  .content .btn a:nth-child(1):hover{
+    background-color: var(--blanco);
+    color: var(--Azul);
+    border-color: var(--Azul);
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+}
+
+
+/* 📱 Media Query para iPhone 14/15 Plus y Pro Max */
+@media screen and (max-width: 430px) {
+  .content .title,
+  .content .name {
+    font-size: 35px;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content .des {
+    position: absolute;
+    width: 90%;
+    max-width: 290px;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.9s 1 forwards;
+    z-index: 99999 !important;
+  }
+
+  .content .btn {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 170px;
+    position: relative;
+    z-index: 100000;
+    margin-right: 35%;
+    text-decoration: none;
+  }
+
+  .content .btn a{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+
+  .content .btn a:nth-child(1){
+    background: var(--Azul);
+    color: var(--blanco);
+    border: 2px solid var(--Azul);
+    transition: 0.3s;
+  }
+
+  .content .btn a:nth-child(2){
+    background: var(--Azul);
+    color: var(--blanco);
+    border: 2px solid var(--Azul);
+    transition: 0.3s;
+  }
+
+  .content .btn a:nth-child(2):hover{
+    background-color: var(--blanco);
+    color: var(--Azul);
+    border-color: var(--Azul);
+  }
+
+  .content .btn a:nth-child(1):hover{
+    background-color: var(--blanco);
+    color: var(--Azul);
+    border-color: var(--Azul);
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
   }
 }
 
